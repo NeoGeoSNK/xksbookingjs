@@ -6,7 +6,7 @@ var autoSubmit = window.setInterval("search()", 1000);
 
 function search() {
 	//setInterval(function(){
-	setDate(1, 25,9112024717);
+	setDate(1, 28,9112025685);
 	//}, 30000);
 
 }
@@ -18,7 +18,7 @@ function setDate(month, day, coachID) {
 		console.log(' Already booked skipping ...');
 	} else {
 		date = new Date(); 
-		if ((date.getHours() != 16) || (date.getMinutes() != 0) || (date.getSeconds() != 1)) {
+		if ((date.getHours() != 0) || (date.getMinutes() != 0) || (date.getSeconds() != 1)) {
 			console.log('Probing coach: ' + coachID + ' On: ' + month + '-' + day + ' At: ' + date);
 		} else {
 			var my = window.open("http://117.74.136.117:8087/PupilWeb/logging/BookingCWStudy.aspx?coachName="+coachID+"&date=2018-"+month+"-"+day+"&beginTime=1400&trainType=cw&timeLine=15", "_blank"); 
