@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="nl" xml:lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+function fun(){
+		return "i just opened you...";
+}
+$(function () {
+		$("#viaWindowOpen").click(function () {
+					window.open("test2.htm");
+				});
+});
+	</script>
+<style>
+a{
+		cursor:pointer;
+				text-decoration:underline;
+						color:#000;
+}
+</style>
+	</head>
+	<body>
+		<a href="test2.htm" target="_blank">open new window with a normal button</a><br /> <br />
+		<a id="viaWindowOpen" >open window via window.open</a>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+{ 
+"manifest_version": 2, 
+"name": "My First Extension", 
+"version": "1.0", 
+"description": "The first extension that I made.", 
+"browser_action": {}, 
+"permissions": [ 
+"http://*/", 
+"bookmarks", 
+"tabs", 
+"history",
+"notifications"
+] , 
+"content_scripts": [ 
+{ 
+"matches": ["http://117.74.136.117:8087/PupilWeb/logging/BookingCWStudy.aspx*"], 
+"js": ["jquery.min.js", "test2.js"] 
+} 
+] 
+}
