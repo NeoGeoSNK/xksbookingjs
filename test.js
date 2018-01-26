@@ -17,7 +17,7 @@ function setDate(month, day, coachID) {
 		console.log(' Already booked skipping ...');
 	} else {
 		date = new Date(); 
-		if ((date.getHours() != 0) || (date.getMinutes() != 0) || (date.getSeconds() != 1)) {
+		if ((date.getHours() != 23) || (date.getMinutes() != 59) || (date.getSeconds() != 57)) {
 			console.log('Probing coach: ' + coachID + ' On: ' + month + '-' + day + ' At: ' + date);
 		} else {
 			var my = window.open("http://117.74.136.117:8087/PupilWeb/logging/BookingCWStudy.aspx?coachName="+coachID+"&date=2018-"+month+"-"+day+"&beginTime=1400&trainType=cw&timeLine=15", "_blank"); 
