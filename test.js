@@ -3,9 +3,9 @@ var aliveSession = window.setInterval("keepMeAlive('ctl00_imgMasterPic')", 60000
 //the year month and date are scheduled training date.
 //The h, m, sec, are today's commit time.
 //booking on year, month(start at 0), date. Committed at h, m, sec, today.
-var d = new Date(2018, 2, 8, 17, 30, 0);
+var d = new Date(2018, 2, 17, 23, 59, 58);
 
-var autoSubmit = window.setInterval(function() { booking(d, 14, 15, '9112024717'); }, 1000);
+var autoSubmit = window.setInterval(function() { booking(d, 14, 15, '9112024719'); }, 1000);
 
 /**
  * booking @coachID at @date, between @startHour to @endHour.
